@@ -23,6 +23,24 @@ const AnalysisSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
+  controlMode: {
+    type: String,
+  },
+  autowareState: {
+    type: String,
+  },
+  map_transform_probability: {
+    type: Number,
+  },
+  pause_state_response: {
+    type: Boolean,
+  },
+  energyLevel: {
+    type: Number,
+  },
+  velocity: {
+    type: Number,
+  },
   // dfz: Distance from zero, when the car is initalized, Unit: km
   dfz: {
     type: Number,
