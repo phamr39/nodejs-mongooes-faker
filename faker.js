@@ -5,7 +5,7 @@ import Analysis from "./model.js";
 const DEFAULT_TIMESTAMP = 1660038345;
 const DEFAULT_DFZ = 0;
 const NUM_OF_RECORDS = 100000;
-const CAR_NAME = "car22";
+const CAR_NAME = "car32";
 
 mongoose.connect("mongodb://localhost:27017/AutoCarServer", {
   useUnifiedTopology: true,
@@ -33,6 +33,7 @@ for (var i = 0; i <= NUM_OF_RECORDS; i++) {
     mapTransformProbability: 0,
     pauseStateResponse: false,
     energyLevel: 90,
+    voltage: 0,
     velocity: 20,
     dfz: parseFloat(i / 1000),
   });
